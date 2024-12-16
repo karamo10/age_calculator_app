@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Poppins Font Link -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- CSS Style Link -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- Favicon -->
+    <link rel="icon" href="assets/images/favicon-32x32.png" />
+    <title>Age Calculator</title>
+  </head>
+  <body>
+    <section class="container">
+      <form id="ageForm">
+        <div class="ageForm__item">
+          <div class="ageForm__group">
+            <label for="">day</label>
+            <input
+              type="number"
+              id="day"
+              min="1"
+              max="31"
+              placeholder="DD"
+              required
+            />
+          </div>
+          <div class="ageForm__group">
+            <label for="">month</label>
+            <input
+              type="number"
+              id="month"
+              min="1"
+              max="12"
+              placeholder="MM"
+              required
+            />
+          </div>
+          <div class="ageForm__group">
+            <label for="">year</label>
+            <input
+              type="number"
+              id="year"
+              min="1900"
+              placeholder="YYYY"
+              required
+            />
+          </div>
+        </div>
+        <div class="ageForm__item ageForm__item--submit">
+          <hr />
+          <div class="ageForm__item--icon-arrow">
+            <button type="submit">
+              <img src="/assets/images/icon-arrow.svg" alt="" />
+            </button>
+          </div>
+          <hr class="leftHorizon" />
+        </div>
+      </form>
+      <div class="display">
+        <h2><span class="yearDisplay">--</span>years</h2>
+      </div>
+      <div class="display">
+        <h2><span class="monthDisplay">--</span>months</h2>
+      </div>
+      <div class="display">
+        <h2><span class="dayDisplay">--</span>days</h2>
+      </div>
+    </section>
+
+    <span class="author"
+      >Challenge from
+      <a href="https://www.frontendmentor.io/challenges" target="_blank"
+        >Frontend mentor</a
+      >
+      and coded by
+      <a href="https://www.instagram.com/pabicamz/" target="_blank"
+        >karamo10</a
+      ></span
+    >
+    <script src="script/script.js"></script>
+  </body>
+</html>
